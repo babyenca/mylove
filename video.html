@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #ffc0cb, #add8e6);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px 50px;
+            max-width: 90%;
+            animation: fadeIn 2s ease-in-out;
+            margin: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #ff69b4;
+        }
+
+        .video-wrapper {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .video-frame {
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background: #add8e6;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #4682b4;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Special Video for You</h1>
+        <div class="video-wrapper">
+            <video class="video-frame" controls>
+                <source src="hi.MOV" type="video/mov">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <button onclick="location.href='baby.html'">Home</button>
+        <footer>
+            <p>Made with love by Your Baby, Meesya</p>
+        </footer>
+    </div>
+</body>
+</html>
